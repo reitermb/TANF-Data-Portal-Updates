@@ -1,1 +1,1 @@
-# Design Environment for testing hero image modifications
+# Design Environment for web hosted live comms
