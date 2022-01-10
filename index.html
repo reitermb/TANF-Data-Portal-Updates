@@ -14,18 +14,22 @@
     <script>
 document.addEventListener('DOMContentLoaded', function () {
         const chart = Highcharts.chart('container', {
+          
+    accessibility: {
+        description: 'Participant votes by preference for Version A, Version B, or each having merit. The votes totals were 2 for Version A, 8 for Version B, and 3 for each having merits'
+    },
             chart: {
                 type: 'bar'
             },
             title: {
-                text: 'Fruit Consumption'
+                text: 'Participant votes'
             },
             xAxis: {
                 categories: ['Version A', 'Version B', 'Each have merits']
             },
             yAxis: {
                 title: {
-                    text: 'Fruit eaten'
+                    text: 'Participant votes'
                 }
             },
             series: [{
