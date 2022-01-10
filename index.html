@@ -11,17 +11,10 @@
     <script src="js/uswds.js"></script>
     <script src="https://code.highcharts.com/highcharts.src.js"></script>
     <script>
-    Highcharts.setOptions({
-  colors: ['#0050d8'],
-  chart: {
-    style: {
-      fontFamily: 'sans-serif',
-      color: '#000'
-    }
-  }
-}); 
+document.addEventListener('DOMContentLoaded', function () {
+        const chart = Highcharts.chart('container', {
 
-$('#container').highcharts({
+
   chart: {
     type: 'column',
     backgroundColor: '#fff'
