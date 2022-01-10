@@ -14,26 +14,23 @@
 document.addEventListener('DOMContentLoaded', function () {
         const chart = Highcharts.chart('container', {
             chart: {
-                type: 'bar'
+                type: 'column'
             },
             title: {
-                text: 'Fruit Consumption'
+                text: 'Votes by version'
             },
             xAxis: {
-                categories: ['Apples', 'Bananas', 'Oranges']
-            },
-            yAxis: {
                 title: {
-                    text: 'Fruit eaten'
+                    text: 'Number of votes'
                 }
             },
+            yAxis: {
+                Categories: ['Version A','Version B','Each have merits']
+            },
             series: [{
-                name: 'Jane',
-                data: [1, 0, 4]
-            }, {
-                name: 'John',
-                data: [5, 7, 3]
-            }]
+                name: 'Votes',
+                data: [2, 8, 3]
+            },
         });
     });
 
